@@ -1,3 +1,5 @@
+version: "3.8"
+
 services:
   mc:
     image: itzg/minecraft-server:java8
@@ -5,7 +7,7 @@ services:
     tty: true
     stdin_open: true
     expose:
-      - "25565"  # Expose internally only to other containers
+      - "25565"  # Expose internally to other containers
     environment:
       EULA: "TRUE"
       TYPE: "AUTO_CURSEFORGE"
@@ -16,3 +18,12 @@ services:
       MAX_PLAYERS: "10"
     volumes:
       - ./data:/data
+
+  infrared:
+    image: haveachin/infrared:latest
+    container_name: infrared
+    restart: always
+    ports:
+      - "25565:25565"  # Expose to ngrok
+    volumes:
+      - ./infrared/configs:/etc/infrared

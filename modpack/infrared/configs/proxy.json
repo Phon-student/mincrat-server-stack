@@ -1,0 +1,6 @@
+{
+    "domainName": "moneywar-mc",
+    "proxyTo": "mc:25565",
+    "proxyProtocol": false
+  }
+  
