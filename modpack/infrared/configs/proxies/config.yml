@@ -1,3 +1,0 @@
-domains:
-  - "*"
-proxyTo: "mc:25565"
