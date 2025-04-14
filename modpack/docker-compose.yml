@@ -27,15 +27,7 @@ services:
     tty: true
     stdin_open: true
     ports:
-      - "25565:25565"  # Only expose Infrared to host
+      - "25565:25565"  # Expose to the host
     volumes:
-      - ./:/configs
-      - /var/run/docker.sock:/var/run/docker.sock
-    environment:
-      INFRARED_CONFIG_PATH: "/configs"
-    networks:
-      - mcnet
-
-networks:
-  mcnet:
-    driver: bridge
+      - ./data/infrared:/etc/infrared
+    
