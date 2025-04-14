@@ -12,8 +12,7 @@ services:
       VERSION: "1.16.5"
       CF_PAGE_URL: "https://www.curseforge.com/minecraft/modpacks/roguelike-adventures-and-dungeons-2"
       CF_API_KEY: "$$2a$$10$$bA6.2mGmk606PaYspFY6juhUcvFwc78AyRCEpcGuV4wgPcpJWkEPO"
-      MEMORY: "8G"
-      MAX_PLAYERS: "10"
+      MEMORY: 10G
     volumes:
       - ./data:/data
     network_mode: "host"  # Use host network mode to expose port 25565 on the host machine
