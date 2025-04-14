@@ -24,8 +24,6 @@ services:
     image: haveachin/infrared
     container_name: infrared
     restart: unless-stopped
-    tty: true
-    stdin_open: true
     ports:
       - "25565:25565"  # Expose to the host
     volumes:
