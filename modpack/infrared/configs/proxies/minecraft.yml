@@ -1,0 +1,9 @@
+# Proxy Configuration for Minecraft Server
+
+# Domains that this proxy will handle
+domains:
+  - "mc.moneywar"
+
+# Addresses to forward traffic to
+addresses:
+  - "modpack-mc:25565"
