@@ -6,7 +6,7 @@ services:
     tty: true
     stdin_open: true
     ports:
-      - "25565:25565"
+      - "25566:25565"
     environment:
       EULA: "TRUE"
       TYPE: "AUTO_CURSEFORGE"
@@ -19,3 +19,19 @@ services:
     volumes:
       - "./data:/data"
 
+  infrared:
+      image: haveachin/infrared
+      container_name: infrared
+      restart: unless-stopped
+      stdin_open: true
+      tty: true
+      ports:
+        - 25565:25565/tcp  # Infrared listens on 25565
+      volumes:
+        - ../infrared:/proxies  # Ensure this points to your actual config directory on the host
+        - /var/run/docker.sock:/var/run/docker.sock  # Optional, if Infrared needs Docker socket access
+      expose:
+        - "25565"
+      environment:
+        INFRARED_CONFIG_PATH: "/config"  # Points to where your config.yml file is inside the container
+      
