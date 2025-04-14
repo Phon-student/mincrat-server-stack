@@ -28,10 +28,10 @@ services:
     ports:
       - "25565:25565"  # Only expose Infrared to host
     volumes:
-      - ./proxies:/proxies  # Mount the proxies directory
+      - ./proxies/:/configs  # Mount the proxies directory
       - /var/run/docker.sock:/var/run/docker.sock
     environment:
-      INFRARED_CONFIG_PATH: "/proxies"
+      INFRARED_CONFIG_PATH: "/configs"
     networks:
       - mcnet
 
