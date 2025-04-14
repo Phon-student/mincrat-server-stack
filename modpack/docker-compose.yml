@@ -24,13 +24,21 @@ services:
     ports:
       - "25565:25565"  # Expose to the host
     environment:
-      - IR_DOMAIN=moneywar-mc  # The domain that players enter in their game client
-      - IR_PORT=25566  # The port that players connect to
-      - IR_TARGET=modpack-mc:25565  # The target server address and port
+      INFRARED_BACKEND: "modpack-mc:25565"  # Proxy backend to the Minecraft container
+      INFRARED_BIND: "0.0.0.0:25565"  # Bind address for the proxy
+      INFRARED_FRONTEND: "ngrok:25565"  # Frontend layer for ngrok
     volumes:
-      - ./config.yml:/infrared/proxies  # Mount the infrared configuration directory
-      - ./data:/infrared/data  # Mount the data directory for infrared
-    depends_on:
-      - mc  # Ensure the Minecraft server is started before infrared
+      - ./infrared/config:/config  # Mount configuration directory
+      - ./infrared/logs:/logs      # Mount logs directory
 
-    
+  ngrok:
+    image: wernight/ngrok
+    container_name: ngrok
+    restart: unless-stopped
+    environment:
+      NGROK_AUTHTOKEN: "2viEnLGSBQteIgQxlb8TRfPfolw_5Qi5FDXfcc5KCGqjruRG8"  # Replace with your ngrok auth token
+      NGROK_REGION: "us"  # Specify the ngrok region (e.g., us, eu, ap)
+      NGROK_PORT: "infrared:25565"  # Forward traffic to the infrared container
+    ports:
+      - "4040:4040"  # Expose ngrok web interface for monitoring
+
