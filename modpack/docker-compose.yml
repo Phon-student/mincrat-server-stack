@@ -23,6 +23,14 @@ services:
     restart: unless-stopped
     ports:
       - "25565:25565"  # Expose to the host
+    environment:
+      - IR_DOMAIN=moneywar-mc  # The domain that players enter in their game client
+      - IR_PORT=25566  # The port that players connect to
+      - IR_TARGET=modpack-mc:25565  # The target server address and port
     volumes:
-      - ./data/infrared:/etc/infrared
-  
+      - ./config.yml:/infrared/proxies  # Mount the infrared configuration directory
+      - ./data:/infrared/data  # Mount the data directory for infrared
+    depends_on:
+      - mc  # Ensure the Minecraft server is started before infrared
+
+    
