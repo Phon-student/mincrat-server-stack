@@ -1,10 +1,11 @@
 services:
   mc:
     image: itzg/minecraft-server:java8
+    container_name: modpack-mc
     tty: true
     stdin_open: true
     expose:
-      - "25565"  # Don't expose to host, only inside the Docker network
+      - "25565"  # Expose internally only to other containers
     environment:
       EULA: "TRUE"
       TYPE: "AUTO_CURSEFORGE"
@@ -14,18 +15,26 @@ services:
       MEMORY: "8192M"
       MAX_PLAYERS: "10"
     volumes:
-      - "./data:/data"
+      - ./data:/data
+    networks:
+      - mcnet
 
   infrared:
     image: haveachin/infrared
     container_name: infrared
     restart: unless-stopped
-    stdin_open: true
     tty: true
+    stdin_open: true
     ports:
-      - 25565:25565/tcp  # Only Infrared is exposed
+      - "25565:25565"  # Only expose Infrared to host
     volumes:
-      - ../infrared:/proxies
+      - ./infrared:/proxies
       - /var/run/docker.sock:/var/run/docker.sock
     environment:
       INFRARED_CONFIG_PATH: "/proxies"
+    networks:
+      - mcnet
+
+networks:
+  mcnet:
+    driver: bridge

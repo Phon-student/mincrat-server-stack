@@ -1,5 +1,3 @@
-{
-  "domainName": "roguelike",
-  "proxyTo": "mc:25565",
-  "listenTo": "0.0.0.0:25565"
-}
+domainName: mc-moneywar
+proxyTo: mc:25565
+listenTo: 0.0.0.0:25565
