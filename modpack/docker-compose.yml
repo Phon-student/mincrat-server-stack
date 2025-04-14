@@ -35,6 +35,3 @@ services:
     environment:
       INFRARED_CONFIG_PATH: "/config"  # Points to where your config.yml file is inside the container
 
-networks:
-  mcnet:
-    driver: bridge  # Create a bridge network for the services to communicate
