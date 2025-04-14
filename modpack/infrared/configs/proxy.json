@@ -1,6 +1,6 @@
 {
-    "domainName": "moneywar-mc",
+    "domainName": "mc.example.com",
     "proxyTo": "mc:25565",
-    "proxyProtocol": false
+    "listenTo": "0.0.0.0:25565"
   }
   
