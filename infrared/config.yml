@@ -1,0 +1,7 @@
+bind: :25565
+log-level: info
+
+proxies:
+  - domain: default
+    destination: curseforge-server:25565
+    online-mode: false
