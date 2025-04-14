@@ -5,7 +5,7 @@ services:
     tty: true
     stdin_open: true
     expose:
-      - "25565"  # Expose internally to other containers
+      - "[2001:fb1:44:8982:aa5e:45ff:fee2:1fdb]:25565"
     environment:
       EULA: "TRUE"
       TYPE: "AUTO_CURSEFORGE"
