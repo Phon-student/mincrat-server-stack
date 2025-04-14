@@ -1,3 +1,22 @@
-domainName: mc-moneywar
-proxyTo: mc:25565
-listenTo: 0.0.0.0:25565
+# Domains that players will use to connect to the server. You can add multiple domains
+# or just use a wildcard character. For now, this is set to accept any domain.
+# Example: "*" will accept connections from any domain.
+# Supports '*' and '?' wildcards for pattern matching.
+domains:
+  - "*"
+
+# The address where Infrared will forward traffic.
+# This should point to the Minecraft server's address, typically in the format:
+# <IP>:<port> or <hostname>:<port>
+addresses:
+  - "modpack-mc:25565"  # Internal Docker service name or IP address and port of Minecraft server
+
+# Optional: If you're behind a load balancer or reverse proxy, you can enable the PROXY Protocol
+# to forward the player's IP address to the backend server.
+# Uncomment this if needed.
+# sendProxyProtocol: true
+
+# Optional: Configure connection timeouts, authentication, or logging here
+# connectionTimeout: 10s
+# authentication:
+#   enabled: false
