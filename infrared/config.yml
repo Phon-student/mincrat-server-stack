@@ -2,6 +2,6 @@ bind: :25565
 log-level: info
 
 proxies:
-  - domain: default
+  - domain: tcp://0.tcp.ap.ngrok.io:17003  # Use your actual ngrok domain
     destination: curseforge-server:25565
     online-mode: false

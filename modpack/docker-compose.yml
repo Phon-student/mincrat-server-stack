@@ -20,13 +20,18 @@ services:
   infrared:
     image: haveachin/infrared
     container_name: infrared
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
     ports:
-      - "25565:25565"  # External port 25565 for the Infrared proxy
+      - 25565:25565/tcp
     volumes:
-      - ./infrared:/config  # Mounts Infrared config directory
-    command: ["infrared", "proxy", "--config", "/config"]  # Starts Infrared with the config mounted
-    networks:
-      - mcnet
+      - ./infrared:/config  # Ensure this points to your actual config directory on the host
+      - /var/run/docker.sock:/var/run/docker.sock  # Optional, only needed if Infrared needs Docker socket access
+    expose:
+      - "25565"
+    environment:
+      INFRARED_CONFIG_PATH: "/config"  # Points to where your config.yml file is inside the container
 
 networks:
   mcnet:
