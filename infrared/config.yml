@@ -1,7 +1,6 @@
-bind: :25565
-log-level: info
 
-proxies:
-  - domain: tcp://0.tcp.ap.ngrok.io:17003  # Use your actual ngrok domain
-    destination: curseforge-server:25565
-    online-mode: false
+{
+    "domainName": "tcp://0.tcp.ap.ngrok.io:17003",
+    "proxyTo": "curseforge-server:25565",
+    "listenTo": "0.0.0.0:25565"
+}
