@@ -27,35 +27,7 @@ services:
       - ./infrared:/config  # Mounts Infrared config directory
     command: ["infrared", "proxy", "--config", "/config"]  # Starts Infrared with the config mounted
     networks:
-      - mcnetversion: "3.8"
-
-services:
-  mc:
-    image: itzg/minecraft-server
-    container_name: curseforge-server
-    ports:
-      - "25566:25565"  # External port 25566 mapped to internal Minecraft port 25565
-    volumes:
-      - ./data:/data  # Mount the data folder to persist Minecraft world data
-      - ./config.yml:/config/config.yml  # Mount your config.yml for Minecraft server
-    networks:
       - mcnet
-
-  infrared:
-    image: haveachin/infrared
-    container_name: infrared
-    ports:
-      - "25565:25565"  # External port 25565 for the Infrared proxy
-    volumes:
-      - ./infrared:/config  # Mounts Infrared config directory
-    command: ["infrared", "proxy", "--config", "/config"]
-    networks:
-      - mcnet
-
-networks:
-  mcnet:
-    driver: bridge  # Create a bridge network for the services to communicate
-
 
 networks:
   mcnet:
