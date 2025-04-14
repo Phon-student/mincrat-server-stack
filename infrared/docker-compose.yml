@@ -1,0 +1,34 @@
+version: "3.8"
+
+services:
+  mc:
+    image: itzg/minecraft-server
+    container_name: curseforge-server
+    ports:
+      - "25566:25565"  # internal only
+    environment:
+      EULA: ${EULA}
+      TYPE: "AUTO_CURSEFORGE"  # Use Auto CurseForge
+      CF_SLUG: ${CF_SLUG}  # Referencing from .env file
+      CF_FILENAME_MATCHER: ${CF_FILENAME_MATCHER}  # Optional, can use latest or version
+      MEMORY: ${MEMORY}
+      CF_API_KEY: ${CF_API_KEY}  # Add your CurseForge API Key here
+    volumes:
+      - ./data:/data
+    networks:
+      - mcnet
+
+  infrared:
+    image: haveachin/infrared
+    container_name: infrared
+    ports:
+      - "25565:25565"
+    volumes:
+      - ./infrared:/config
+    command: ["infrared", "proxy", "--config", "/config"]
+    networks:
+      - mcnet
+
+networks:
+  mcnet:
+    driver: bridge
