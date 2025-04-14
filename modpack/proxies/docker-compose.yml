@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  infrared:
+    image: haveachin/infrared
+    container_name: infrared
+    restart: unless-stopped
+    ports:
+      - "25565:25565"  # Expose to the host
+    environment:
+      INFRARED_CONFIG: "/proxies/config.yml"
+  
+    volumes:
+      - ./config.yml:/proxies
+    
