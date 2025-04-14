@@ -18,4 +18,12 @@ services:
       MAX_PLAYERS: "10"
     volumes:
       - ./data:/data
-
+  
+  infrared:
+    image: haveachin/infrared:latest
+    container_name: infrared
+    restart: always
+    ports:
+      - "25565:25565"  # Expose to ngrok
+    volumes:
+      - ./infrared/configs:/etc/infrared
