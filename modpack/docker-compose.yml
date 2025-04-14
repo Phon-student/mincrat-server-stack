@@ -28,7 +28,7 @@ services:
     ports:
       - "25565:25565"  # Only expose Infrared to host
     volumes:
-      - ./infrared:/proxies
+      - ../infrared:/proxies
       - /var/run/docker.sock:/var/run/docker.sock
     environment:
       INFRARED_CONFIG_PATH: "/proxies"
