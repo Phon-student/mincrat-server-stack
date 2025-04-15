@@ -13,7 +13,6 @@ services:
       CF_PAGE_URL: "https://www.curseforge.com/minecraft/modpacks/roguelike-adventures-and-dungeons-2"
       CF_API_KEY: "$$2a$$10$$bA6.2mGmk606PaYspFY6juhUcvFwc78AyRCEpcGuV4wgPcpJWkEPO"
       MEMORY: 10G
-      JVM_OPTS: "-Xms6G -Xmx10G -XX:+UseG1GC -XX:+UnlockExperimentalVMOptions -XX:MaxGCPauseMillis=100"
     volumes:
       - ./data:/data
     network_mode: "bridge"
