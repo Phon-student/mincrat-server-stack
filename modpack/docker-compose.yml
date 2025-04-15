@@ -1,6 +1,6 @@
 services:
   mc:
-    image: itzg/minecraft-server:java8-jdk
+    image: itzg/minecraft-server:java8
     container_name: modpack-mc
     tty: true
     stdin_open: true
