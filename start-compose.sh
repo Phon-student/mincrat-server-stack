@@ -2,6 +2,12 @@
 
 SESSION_NAME="minecraft-server"
 
+# Ensure tmux server is running
+if ! tmux info &>/dev/null; then
+  echo "Starting tmux server..."
+  tmux start-server
+fi
+
 # Check if the tmux session already exists
 if tmux has-session -t $SESSION_NAME 2>/dev/null; then
   echo "Session $SESSION_NAME already exists. Attaching..."
