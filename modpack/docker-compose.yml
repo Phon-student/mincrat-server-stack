@@ -8,7 +8,7 @@ services:
       - "25565:25565"
     environment:
       EULA: "TRUE"
-      TYPE: "CURSEFORGE"
+      TYPE: "AUTO_CURSEFORGE"
       CF_API_KEY: "$$2a$$10$$bA6.2mGmk606PaYspFY6juhUcvFwc78AyRCEpcGuV4wgPcpJWkEPO"
       CF_SLUG: ciscos-adventure-rpg-ultimate
       CF_FILE_ID: "6371971"
