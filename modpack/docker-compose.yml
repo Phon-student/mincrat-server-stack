@@ -5,13 +5,13 @@ services:
     image: itzg/minecraft-server:stable
     tty: true
     stdin_open: true
+    restart: unless-stopped
     ports:
       - "25565:25565"
     environment:
       EULA: "TRUE"
       TYPE: "AUTO_CURSEFORGE"
-      CF_PAGE_URL: "https://www.curseforge.com/minecraft/modpacks/ciscos-adventure-rpg-ult\
-        imate"
+      CF_PAGE_URL: "https://www.curseforge.com/minecraft/modpacks/ciscos-adventure-rpg-ultimate"
       CF_API_KEY: "$$2a$$10$$bA6.2mGmk606PaYspFY6juhUcvFwc78AyRCEpcGuV4wgPcpJWkEPO"
       MEMORY: "10240M"
       MAX_PLAYERS: "10"
