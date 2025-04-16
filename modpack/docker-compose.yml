@@ -17,8 +17,6 @@ services:
       ENABLE_COMMAND_BLOCK: "true"
       SIMULATION_DISTANCE: "8"
       VIEW_DISTANCE: "8"
-      MAX_TICK_TIME: "-1"
-      MAX_CHAINED_NEIGHBOR_UPDATES: "-1"
       OPS: |-
         7acf6031-37a2-418e-b467-5a75da10bd0b
       PAUSE_WHEN_EMPTY_SECONDS: "70"
