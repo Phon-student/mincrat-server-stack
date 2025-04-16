@@ -8,10 +8,10 @@ services:
       - "25565:25565"
     environment:
       EULA: "TRUE"
-      TYPE: "AUTO_CURSEFORGE"
-      VERSION: "1.19.2"  # or remove if letting CurseForge decide
-      CF_PAGE_URL: "https://www.curseforge.com/minecraft/modpacks/ciscos-adventure-rpg-ultimate"
+      TYPE: "CURSEFORGE"
       CF_API_KEY: "$$2a$$10$$bA6.2mGmk606PaYspFY6juhUcvFwc78AyRCEpcGuV4wgPcpJWkEPO"
+      CF_MODPACK_ID: "680832"
+      CF_FILE_ID: "5273037"
       MEMORY: 10G
     volumes:
       - ./data:/data
