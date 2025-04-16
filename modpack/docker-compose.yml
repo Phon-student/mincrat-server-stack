@@ -1,6 +1,6 @@
 services:
   mc:
-    image: itzg/minecraft-server:java17
+    image: itzg/minecraft-server:stable
     container_name: modpack-mc
     tty: true
     stdin_open: true
