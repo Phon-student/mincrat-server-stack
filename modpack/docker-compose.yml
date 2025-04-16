@@ -9,9 +9,9 @@ services:
     environment:
       EULA: "TRUE"
       TYPE: "AUTO_CURSEFORGE"
+      VERSION: "1.19.2"  # or remove if letting CurseForge decide
+      CF_PAGE_URL: "https://www.curseforge.com/minecraft/modpacks/beyond-ascension"
       CF_API_KEY: "$$2a$$10$$bA6.2mGmk606PaYspFY6juhUcvFwc78AyRCEpcGuV4wgPcpJWkEPO"
-      CF_SLUG: ciscos-adventure-rpg-ultimate
-      CF_FILE_ID: "6371971"
       MEMORY: 10G
     volumes:
       - ./data:/data
