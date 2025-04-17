@@ -5,7 +5,6 @@ services:
     image: itzg/minecraft-server:stable
     tty: true
     stdin_open: true
-    restart: unless-stopped
     ports:
       - "25565:25565"
     environment:
