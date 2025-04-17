@@ -13,7 +13,7 @@ services:
       TYPE: "AUTO_CURSEFORGE"
       CF_PAGE_URL: "https://www.curseforge.com/minecraft/modpacks/ciscos-adventure-rpg-ultimate"
       CF_API_KEY: "$$2a$$10$$bA6.2mGmk606PaYspFY6juhUcvFwc78AyRCEpcGuV4wgPcpJWkEPO"
-      MEMORY: "10240M"
+      MEMORY: "16384M"
       MAX_PLAYERS: "10"
       MOTD: "moneywarMC"
       ONLINE_MODE: "false"
