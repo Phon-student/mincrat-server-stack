@@ -22,9 +22,3 @@ services:
       ALLOW_FLIGHT: "true"
     volumes:
       - "./data:/data"
-    deploy:
-      resources:
-        limits:
-          memory: 16g
-        reservations:
-          memory: 14g
