@@ -1,4 +1,3 @@
-
 services:
   mc:
     image: itzg/minecraft-server:latest
@@ -9,9 +8,8 @@ services:
     environment:
       EULA: "TRUE"
       TYPE: "AUTO_CURSEFORGE"
-      CF_PAGE_URL: "https://www.curseforge.com/minecraft/modpacks/darkrpg-forge"
+      CF_PAGE_URL: "https://www.curseforge.com/minecraft/modpacks/darkrpg"
       CF_API_KEY: "$$2a$$10$$bA6.2mGmk606PaYspFY6juhUcvFwc78AyRCEpcGuV4wgPcpJWkEPO"
-      CF_MODS: "433882"
       MEMORY: "20480M"
       MAX_PLAYERS: "10"
       ONLINE_MODE: "false"
