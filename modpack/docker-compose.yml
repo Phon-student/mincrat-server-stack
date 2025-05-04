@@ -10,6 +10,7 @@ services:
       TYPE: "AUTO_CURSEFORGE"
       CF_PAGE_URL: "https://www.curseforge.com/minecraft/modpacks/darkrpg"
       CF_API_KEY: "$$2a$$10$$bA6.2mGmk606PaYspFY6juhUcvFwc78AyRCEpcGuV4wgPcpJWkEPO"
+      NO_UPDATE: "true"
       MEMORY: "24576M"
       MAX_PLAYERS: "10"
       ONLINE_MODE: "false"
