@@ -13,7 +13,7 @@ services:
       CF_EXCLUDE_MODS: "happy-go-lucky"
       CF_FORCE_SYNCHRONIZE: "true"
       NO_UPDATE: "true"
-      MEMORY: "24576M"
+      MEMORY: "20480M"
       MAX_PLAYERS: "10"
       ONLINE_MODE: "false"
       USE_AIKAR_FLAGS: "true"
