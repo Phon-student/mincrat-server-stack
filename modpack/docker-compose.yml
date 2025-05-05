@@ -15,7 +15,6 @@ services:
       NO_UPDATE: "true"
       MEMORY: "20480M"
       MAX_PLAYERS: "10"
-      ONLINE_MODE: "false"
       USE_AIKAR_FLAGS: "true"
       FORCE_GAMEMODE: "true"
       ENABLE_COMMAND_BLOCK: "true"
