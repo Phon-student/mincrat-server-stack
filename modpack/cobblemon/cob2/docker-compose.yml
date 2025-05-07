@@ -11,6 +11,7 @@ services:
       EULA: "TRUE"
       TYPE: "AUTO_CURSEFORGE"
       CF_MODPACK_ZIP: /modpacks/Cobbleverse.zip
+      CF_PAGE_URL: "https://www.curseforge.com/minecraft/modpacks/cobbleverse-cobblemon"
       CF_FORCE_SYNCHRONIZE: "true"
       NO_UPDATE: "true"
       MEMORY: "4096M"
