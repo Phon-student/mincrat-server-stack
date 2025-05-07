@@ -16,7 +16,6 @@ services:
       DOWNLOAD_SERVER_MODS: "false"
       NO_UPDATE: "true"
       MAX_PLAYERS: "10"
-      ONLINE_MODE: "false"
       USE_AIKAR_FLAGS: "true"
       FORCE_GAMEMODE: "true"
       ENABLE_COMMAND_BLOCK: "true"
@@ -28,6 +27,6 @@ services:
       PLAYER_IDLE_TIMEOUT: "5"
       ALLOW_FLIGHT: "true"
       MODRINTH_EXCLUDE_FILES: |
-        mods/cobblemon-ui-tweaks-1.0.7.jar
+        cobblemon-ui-tweaks
     volumes:
       - "./data:/data"
