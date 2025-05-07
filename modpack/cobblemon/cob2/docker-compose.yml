@@ -12,7 +12,7 @@ services:
       EULA: "TRUE"
       TYPE: "MODRINTH"
       MODRINTH_MODPACK: "https://modrinth.com/modpack/jonathans-cobblemon-pack"
-      MEMORY: "6144M"
+      MEMORY: "10240M"
       MAX_PLAYERS: "10"
       USE_AIKAR_FLAGS: "true"
       FORCE_GAMEMODE: "true"
