@@ -31,6 +31,9 @@ services:
         cobblemon-ui-tweaks
         mobfilter
         soundsbegone
+        'COBBLEVERSE - No Mobs.zip'
+        'COBBLEVERSE - No Ender Dragon.zip'
+        'COBBLEVERSE - No Hunger.zip'
       MODRINTH_FORCE_SYNCHRONIZE : "true"  
     volumes:
       - "./data:/data"
