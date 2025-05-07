@@ -1,6 +1,4 @@
 services:
-  mc2:
-    services:
   cobbleverse-server:
     image: itzg/minecraft-server:latest
     ports:
