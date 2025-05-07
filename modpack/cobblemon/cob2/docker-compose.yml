@@ -27,5 +27,7 @@ services:
       PAUSE_WHEN_EMPTY_SECONDS: "600"
       PLAYER_IDLE_TIMEOUT: "5"
       ALLOW_FLIGHT: "true"
+      MODRINTH_EXCLUDE_FILES: |
+        mods/cobblemon-ui-tweaks-1.0.7.jar
     volumes:
       - "./data:/data"
