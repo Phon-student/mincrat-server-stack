@@ -11,7 +11,7 @@ services:
       EULA: "TRUE"
       TYPE: "MODRINTH"
       MODRINTH_MODPACK: "https://modrinth.com/modpack/cobbleverse"
-      MODRINTH_VERSION: "1.3.4b" 
+      MODRINTH_VERSION: "1.3.3" 
       MEMORY: "6144M"
       MAX_PLAYERS: "10"
       ONLINE_MODE: "false"
