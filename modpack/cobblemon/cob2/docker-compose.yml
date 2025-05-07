@@ -1,28 +1,24 @@
 services:
   mc2:
+    services:
+  cobbleverse-server:
     image: itzg/minecraft-server:latest
-    container_name: cobbleverse-server
-    tty: true
-    stdin_open: true
     ports:
       - "25568:25568"
     environment:
-      SERVER_PORT: "25568"
       EULA: "TRUE"
-      TYPE: "CURSEFORGE"
+      TYPE: "AUTO_CURSEFORGE"
+      CF_PAGE_URL: "https://www.curseforge.com/minecraft/modpacks/cobbleverse-cobblemon"
+      CF_API_KEY: "$$2a$$10$$bA6.2mGmk606PaYspFY6juhUcvFwc78AyRCEpcGuV4wgPcpJWkEPO"
       CF_MODPACK_ZIP: /modpacks/Cobbleverse.zip
       CF_FORCE_SYNCHRONIZE: "true"
-      NO_UPDATE: "true"
       MEMORY: "4096M"
-      MAX_PLAYERS: "10"
-      USE_AIKAR_FLAGS: "true"
-      FORCE_GAMEMODE: "true"
       ENABLE_COMMAND_BLOCK: "true"
-      SEED: "-561697773542121824"
-      PLAYER_IDLE_TIMEOUT: "10"
       ALLOW_FLIGHT: "true"
-      OPS: |
-        7acf6031-37a2-418e-b467-5a75da10bd0b
+      MAX_PLAYERS: "10"
+    volumes:
+      - ./data:/data
+      - ./modpacks:/modpacks
     volumes:
       - ./data:/data
       - ./Cobbleverse.zip:/modpacks/Cobbleverse.zip:ro
