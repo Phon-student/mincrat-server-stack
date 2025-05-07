@@ -6,8 +6,9 @@ services:
     tty: true
     stdin_open: true
     ports:
-      - "25565:25565"
+      - "25567:25567"
     environment:
+      SERVER_PORT: "25567"
       EULA: "TRUE"
       TYPE: "MODRINTH"
       MODRINTH_MODPACK: "https://modrinth.com/modpack/cobbleverse"
