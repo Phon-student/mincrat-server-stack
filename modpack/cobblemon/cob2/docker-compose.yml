@@ -26,6 +26,7 @@ services:
       ALLOW_FLIGHT: "true"
       MODRINTH_EXCLUDE_FILES: |
         cobblemon-ui-tweaks
+        DeltaClient
       MODRINTH_FORCE_SYNCHRONIZE : "true"  
     volumes:
       - "./data:/data"
