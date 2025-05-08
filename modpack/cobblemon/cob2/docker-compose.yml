@@ -11,10 +11,9 @@ services:
       SERVER_PORT: "25567"
       EULA: "TRUE"
       TYPE: "MODRINTH"
-      MODRINTH_MODPACK: "https://modrinth.com/modpack/pixelmon-ultron"
+      MODRINTH_MODPACK: "https://modrinth.com/modpack/jonathans-cobblemon-pack"
       MEMORY: "20480M"
       MAX_PLAYERS: "10"
-      USE_AIKAR_FLAGS: "true"
       FORCE_GAMEMODE: "true"
       ENABLE_COMMAND_BLOCK: "true"
       SEED: "-561697773542121824"
@@ -24,9 +23,8 @@ services:
       PAUSE_WHEN_EMPTY_SECONDS: "600"
       PLAYER_IDLE_TIMEOUT: "5"
       ALLOW_FLIGHT: "true"
-      # MODRINTH_EXCLUDE_FILES: |
-      #   cobblemon-ui-tweaks
-      #   DeltaClient
-      # MODRINTH_FORCE_SYNCHRONIZE : "true"  
+      MODRINTH_EXCLUDE_FILES: |
+        cobblemon-ui-tweaks
+      MODRINTH_FORCE_SYNCHRONIZE : "true"  
     volumes:
       - "./data:/data"
