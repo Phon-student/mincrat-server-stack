@@ -11,7 +11,7 @@ services:
       SERVER_PORT: "25567"
       EULA: "TRUE"
       TYPE: "MODRINTH"
-      MODRINTH_MODPACK: "https://modrinth.com/modpack/jonathans-cobblemon-pack"
+      MODRINTH_MODPACK: "https://modrinth.com/modpack/cobblemondelta"
       MEMORY: "20480M"
       MAX_PLAYERS: "10"
       USE_AIKAR_FLAGS: "true"
