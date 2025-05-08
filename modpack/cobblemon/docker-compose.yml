@@ -13,7 +13,7 @@ services:
       CF_API_KEY: "$$2a$$10$$bA6.2mGmk606PaYspFY6juhUcvFwc78AyRCEpcGuV4wgPcpJWkEPO"
       CF_FORCE_SYNCHRONIZE: "true"
       NO_UPDATE: "true"
-      MEMORY: "4096M"
+      MEMORY: "10240M"
       MAX_PLAYERS: "10"
       USE_AIKAR_FLAGS: "true"
       FORCE_GAMEMODE: "true"
