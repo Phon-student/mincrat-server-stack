@@ -9,7 +9,7 @@ services:
       SERVER_PORT: "25567"
       EULA: "TRUE"
       TYPE: "AUTO_CURSEFORGE"
-      CF_PAGE_URL: "https://www.curseforge.com/minecraft/modpacks/cobblemonrealms"
+      CF_PAGE_URL: "https://modrinth.com/modpack/cobblemondelta"
       CF_API_KEY: "$$2a$$10$$bA6.2mGmk606PaYspFY6juhUcvFwc78AyRCEpcGuV4wgPcpJWkEPO"
       CF_FORCE_SYNCHRONIZE: "true"
       NO_UPDATE: "true"
