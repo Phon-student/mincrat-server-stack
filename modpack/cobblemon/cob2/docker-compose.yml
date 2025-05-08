@@ -11,7 +11,7 @@ services:
       SERVER_PORT: "25567"
       EULA: "TRUE"
       TYPE: "MODRINTH"
-      MODRINTH_MODPACK: "https://modrinth.com/modpack/cobblemondelta"
+      MODRINTH_MODPACK: "https://modrinth.com/modpack/pixelmon-ultron"
       MEMORY: "20480M"
       MAX_PLAYERS: "10"
       USE_AIKAR_FLAGS: "true"
@@ -24,9 +24,9 @@ services:
       PAUSE_WHEN_EMPTY_SECONDS: "600"
       PLAYER_IDLE_TIMEOUT: "5"
       ALLOW_FLIGHT: "true"
-      MODRINTH_EXCLUDE_FILES: |
-        cobblemon-ui-tweaks
-        DeltaClient
-      MODRINTH_FORCE_SYNCHRONIZE : "true"  
+      # MODRINTH_EXCLUDE_FILES: |
+      #   cobblemon-ui-tweaks
+      #   DeltaClient
+      # MODRINTH_FORCE_SYNCHRONIZE : "true"  
     volumes:
       - "./data:/data"
