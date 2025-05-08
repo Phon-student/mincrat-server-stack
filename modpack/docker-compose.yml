@@ -12,7 +12,6 @@ services:
       CF_API_KEY: "$$2a$$10$$bA6.2mGmk606PaYspFY6juhUcvFwc78AyRCEpcGuV4wgPcpJWkEPO"
       CF_EXCLUDE_MODS: |
         happy-go-lucky
-        Statement Vanilla Compatibility Module
       CF_FORCE_SYNCHRONIZE: "true"
       NO_UPDATE: "true"
       MEMORY: "20480M"
