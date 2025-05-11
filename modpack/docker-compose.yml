@@ -8,13 +8,13 @@ services:
     environment:
       EULA: "TRUE"
       TYPE: "AUTO_CURSEFORGE"
-      CF_PAGE_URL: "https://www.curseforge.com/minecraft/modpacks/craft-to-exile-2"
+      CF_PAGE_URL: "https://www.curseforge.com/minecraft/modpacks/craftoria"
       CF_API_KEY: "$$2a$$10$$bA6.2mGmk606PaYspFY6juhUcvFwc78AyRCEpcGuV4wgPcpJWkEPO"
-      CF_EXCLUDE_MODS: |
-        happy-go-lucky
-        chat-plus
-      CF_FORCE_SYNCHRONIZE: "true"
-      NO_UPDATE: "true"
+      # CF_EXCLUDE_MODS: |
+      #   happy-go-lucky
+      #   chat-plus
+      # CF_FORCE_SYNCHRONIZE: "true"
+      # NO_UPDATE: "true"
       MEMORY: "20480M"
       MAX_PLAYERS: "10"
       USE_AIKAR_FLAGS: "true"
