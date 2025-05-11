@@ -23,8 +23,8 @@ services:
       PAUSE_WHEN_EMPTY_SECONDS: "600"
       PLAYER_IDLE_TIMEOUT: "5"
       ALLOW_FLIGHT: "true"
-      # MODRINTH_EXCLUDE_FILES: |
-      #   cobblemon-ui-tweaks
-      # MODRINTH_FORCE_SYNCHRONIZE : "true"  
+      MODRINTH_EXCLUDE_FILES: |
+        cobblemon-ui-tweaks
+      MODRINTH_FORCE_SYNCHRONIZE : "true"  
     volumes:
       - "./data:/data"
