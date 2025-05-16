@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   mc:
-    image: itzg/minecraft-server:java24
+    image: itzg/minecraft-server:lastest
     tty: true
     stdin_open: true
     ports:
