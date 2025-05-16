@@ -1,6 +1,6 @@
 services:
   mc2:
-    image: itzg/minecraft-server:latest
+    image: itzg/minecraft-server:java21
     tty: true
     stdin_open: true
     ports:
