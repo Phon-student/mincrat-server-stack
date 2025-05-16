@@ -12,7 +12,7 @@ services:
       TYPE: "AUTO_CURSEFORGE"
       CF_SLUG: "craftoria"
       CF_FILE_ID: "6491404"
-      CF_API_KEY: "$$2a$$10$$61vnjF/HZPsqUdH7tGZ5y.srFvarGH.dRhhFSEctrcsGXRFIixOBi"
+      CF_API_KEY: "$2a$10$61vnjF/HZPsqUdH7tGZ5y.srFvarGH.dRhhFSEctrcsGXRFIixOBi"
       MEMORY: "15360M"
       USE_AIKAR_FLAGS: "true"
       TZ: "Asia/Singapore"
