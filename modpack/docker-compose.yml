@@ -18,6 +18,7 @@ services:
       MEMORY: "20480M"
       MAX_PLAYERS: "10"
       USE_AIKAR_FLAGS: "true"
+      PLAYER_IDLE_TIMEOUT: "30"
       FORCE_GAMEMODE: "true"
       ENABLE_COMMAND_BLOCK: "true"
       SEED: "-561697773542121824"
