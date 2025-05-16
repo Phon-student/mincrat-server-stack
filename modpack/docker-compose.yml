@@ -13,7 +13,7 @@ services:
       CF_SLUG: "craftoria"
       CF_FILE_ID: "6491403"
       CF_API_KEY: "$2a$10$61vnjF/HZPsqUdH7tGZ5y.srFvarGH.dRhhFSEctrcsGXRFIixOBi"
-      MEMORY: "15360M"
+      MEMORY: "20480M"
       USE_AIKAR_FLAGS: "true"
       TZ: "Asia/Singapore"
       FORCE_GAMEMODE: "true"
