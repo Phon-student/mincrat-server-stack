@@ -5,12 +5,13 @@ services:
     stdin_open: true
     ports:
       - "25567:25567"
+    restart: unless-stopped
     environment:
       SERVER_PORT: "25567"
       EULA: "TRUE"
       TYPE: "AUTO_CURSEFORGE"
-      CF_PAGE_URL: "https://www.curseforge.com/minecraft/modpacks/cobblemonrealms"
-      CF_API_KEY: "$$2a$$10$$61vnjF/HZPsqUdH7tGZ5y.srFvarGH.dRhhFSEctrcsGXRFIixOBi"
+      CF_PAGE_URL: "https://www.curseforge.com/minecraft/modpacks/bcg"
+      CF_API_KEY: "$2a$10$61vnjF/HZPsqUdH7tGZ5y.srFvarGH.dRhhFSEctrcsGXRFIixOBi"
       CF_FORCE_SYNCHRONIZE: "true"
       NO_UPDATE: "true"
       MEMORY: "4096M"
