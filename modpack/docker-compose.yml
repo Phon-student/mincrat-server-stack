@@ -14,13 +14,11 @@ services:
       CF_API_KEY: "$2a$10$61vnjF/HZPsqUdH7tGZ5y.srFvarGH.dRhhFSEctrcsGXRFIixOBi"
       MEMORY: "20480M"
       USE_AIKAR_FLAGS: "true"
-      TZ: "Asia/Singapore"
       FORCE_GAMEMODE: "true"
       ENABLE_COMMAND_BLOCK: "true"
       REGION_FILE_COMPRESSION: "lz4"
       OPS: |-
         7acf6031-37a2-418e-b467-5a75da10bd0b
       ALLOW_FLIGHT: "true"
-      LOG_TIMESTAMP: "true"
     volumes:
       - "./data:/data"
