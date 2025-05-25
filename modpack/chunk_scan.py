@@ -25,5 +25,5 @@ def scan_region_files(world_path):
                 print(f"❌ Failed to open {filename}: {e}")
 
 # Change this path to your world folder
-world_folder_path = ".data/world/"
+world_folder_path = "data/world/region"
 scan_region_files(world_folder_path)
