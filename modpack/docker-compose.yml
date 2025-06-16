@@ -11,9 +11,9 @@ services:
     environment:
       EULA: "TRUE"
       TYPE: "AUTO_CURSEFORGE"
-      CF_PAGE_URL: "https://www.curseforge.com/minecraft/modpacks/craftoria"
+      CF_PAGE_URL: "https://www.curseforge.com/minecraft/modpacks/all-the-mods-10"
       CF_API_KEY: "$$2a$$10$$61vnjF/HZPsqUdH7tGZ5y.srFvarGH.dRhhFSEctrcsGXRFIixOBi"
-      MEMORY: "20480M"
+      MEMORY: "12288M"
       MAX_PLAYERS: "10"
       FORCE_GAMEMODE: "true"
       ENABLE_COMMAND_BLOCK: "true"
