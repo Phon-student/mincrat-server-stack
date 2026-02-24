@@ -1,0 +1,30 @@
+services:
+  mc:
+    image: itzg/minecraft-server:stable
+    tty: true
+    stdin_open: true
+    ports:
+      - "25565:25565"
+    restart: unless-stopped
+
+    environment:
+      EULA: "TRUE"
+      TYPE: "VANILLA"
+      VERSION: "LATEST"
+
+      MEMORY: "4G"
+      MAX_PLAYERS: "10"
+
+      ENABLE_COMMAND_BLOCK: "true"
+      ALLOW_FLIGHT: "true"
+
+      REGION_FILE_COMPRESSION: "lz4"
+
+      OPS: |-
+        7acf6031-37a2-418e-b467-5a75da10bd0b
+
+      ENABLE_ROLLING_LOGS: "true"
+      LOG_TIMESTAMP: "true"
+
+    volumes:
+      - "./data:/data"
