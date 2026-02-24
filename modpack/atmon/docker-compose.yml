@@ -10,7 +10,6 @@ services:
       SERVER_PORT: "25567"
       EULA: "TRUE"
       TYPE: "AUTO_CURSEFORGE"
-      JVM_VERSION: "21"
       CF_PAGE_URL: "https://www.curseforge.com/minecraft/modpacks/all-the-mons"
       CF_API_KEY: "$$2a$$10$$61vnjF/HZPsqUdH7tGZ5y.srFvarGH.dRhhFSEctrcsGXRFIixOBi"
       CF_FORCE_SYNCHRONIZE: "true"
